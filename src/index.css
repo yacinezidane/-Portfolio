@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+background-image: url("./assets/bg-personal.jpg");
+background-size: cover;           /* تغطي كامل الشاشة */
+background-position: center;      /* توسيط الصورة */
+background-repeat: no-repeat;     /* بدون تكرار */
+background-attachment: fixed;     /* تثبيت الصورة عند التمرير */
+min-height: 100vh;                /* على الأقل بطول الشاشة */
+font-family: Arial, sans-serif;   /* خط افتراضي */
+}
+.clip-pentagon {
+    clip-path: polygon(
+      50% 0%,
+      100% 38%,
+      82% 100%,
+      18% 100%,
+      0% 38%
+    )}
